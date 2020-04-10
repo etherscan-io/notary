@@ -1,0 +1,85 @@
+{"app_name":"VoiceApp","timestamp":"2020-01-09 09:57:14.92 -0800","app_version":"19.50","slice_uuid":"64805973-00AE-3D3A-AA7D-F6ABDF8D062E","adam_id":318698524,"build_version":"19.50.286292397","bundleID":"com.google.GVDialer","share_with_app_devs":false,"is_first_party":false,"bug_type":"142","os_version":"iPhone OS 13.3 (17C54)","incident_id":"228A5603-E5A5-489F-BA1A-DE670301A425","name":"VoiceApp"}
+Date/Time:        2020-01-09 09:56:26 -0800
+End time:         2020-01-09 09:57:14 -0800
+OS Version:       iPhone OS 13.3 (Build 17C54)
+Architecture:     arm64e
+Report Version:   29
+Incident Identifier: 228A5603-E5A5-489F-BA1A-DE670301A425
+
+Data Source:      Microstackshots
+Shared Cache:     0x2b4e8000 7659EEB7-96EB-38AB-A8B6-76367E2EC5E6
+
+Command:          VoiceApp
+Path:             /private/var/containers/Bundle/Application/A6205FB1-0271-4173-8006-E0944A63E48B/VoiceApp.app/VoiceApp
+Identifier:       com.google.GVDialer
+Version:          19.50 (19.50.286292397)
+Beta Identifier:  1DE2C6E3-9FA6-4B0F-9312-E1A5889874DE
+PID:              30797
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45002 wakeups over the last 48 seconds (934 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45002
+Wakeups duration: 48s
+Duration:         48.20s
+Duration Sampled: 2.00s
+Steps:            2
+
+Hardware model:   iPhone12,3
+Active cpus:      6
+
+
+Heaviest stack for the target process:
+  2  ??? (libsystem_pthread.dylib + 6208) [0x1ab655840]
+  1  ??? (VoiceApp + 24200276) [0x101cd8454]
+  1  ??? (VoiceApp + 23842500) [0x101c80ec4]
+  1  ??? (VoiceApp + 23882120) [0x101c8a988]
+  1  ??? (VoiceApp + 23882332) [0x101c8aa5c]
+  1  ??? (VoiceApp + 23887812) [0x101c8bfc4]
+  1  ??? (VoiceApp + 24134216) [0x101cc8248]
+  1  ??? (libsystem_kernel.dylib + 154828) [0x1ab736ccc]
+
+
+Powerstats for:   VoiceApp [30797]
+Bundle ID:        com.google.GVDialer
+Adam ID:          318698524
+Is first party:   No
+App version:      19.50
+Build version:    19.50.286292397
+Is Beta:          No
+Share with Devs:  No
+UUID:             64805973-00AE-3D3A-AA7D-F6ABDF8D062E
+Path:             /private/var/containers/Bundle/Application/A6205FB1-0271-4173-8006-E0944A63E48B/VoiceApp.app/VoiceApp
+Architecture:     arm64
+Footprint:        63.41 MB
+Pageins:          4 pages
+Start time:       2020-01-09 09:57:05 -0800
+End time:         2020-01-09 09:57:07 -0800
+Num samples:      2 (100%)
+CPU Time:         1.120s
+Primary state:    1 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    2 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 2 samples on AC
+  2  ??? (libsystem_pthread.dylib + 6208) [0x1ab655840]
+    1  ??? (VoiceApp + 24200276) [0x101cd8454]
+      1  ??? (VoiceApp + 23842500) [0x101c80ec4]
+        1  ??? (VoiceApp + 23882120) [0x101c8a988]
+          1  ??? (VoiceApp + 23882332) [0x101c8aa5c]
+            1  ??? (VoiceApp + 23887812) [0x101c8bfc4]
+              1  ??? (VoiceApp + 24134216) [0x101cc8248]
+                1  ??? (libsystem_kernel.dylib + 154828) [0x1ab736ccc]
+    1  ??? (VoiceApp + 19473264) [0x101856370]
+      1  ??? (VoiceApp + 22864048) [0x101b920b0]
+        1  ??? (VoiceApp + 22865324) [0x101b925ac]
+          1  ??? (VoiceApp + 22037548) [0x101ac842c]
+            1  ??? (VoiceApp + 22006880) [0x101ac0c60]
+              1  ??? (VoiceApp + 19456192) [0x1018520c0]
+                1  ??? (VoiceApp + 19499324) [0x10185c93c]
+                  1  <User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+
+  Binary Images:
+           0x1005c4000 -                ???  com.google.GVDialer 19.50 (19.50.286292397) <64805973-00AE-3D3A-AA7D-F6ABDF8D062E>  /private/var/containers/Bundle/Application/A6205FB1-0271-4173-8006-E0944A63E48B/VoiceApp.app/VoiceApp
+           0x1ab654000 -        0x1ab65efff  libsystem_pthread.dylib                     <5F848A4C-4907-3FC9-A76D-378FE8F2E4FC>  /usr/lib/system/libsystem_pthread.dylib
+           0x1ab711000 -        0x1ab73ffff  libsystem_kernel.dylib                      <4ACDE3C8-6630-3F87-9774-D1741EA28F2B>  /usr/lib/system/libsystem_kernel.dylib
